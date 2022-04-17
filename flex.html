@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .flex{
+            border: 2px solid red;
+            line-height: 225px;
+            text-align: center;
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+            height: 800px;
+            /* flex-wrap: wrap;
+            flex-direction: row; */
+            flex-flow: row;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="width:200px" class="flex">1</div>
+        
+        <div style="flex-basis: 800px;" class="flex">5</div>
+    </div>
+</body>
+</html>

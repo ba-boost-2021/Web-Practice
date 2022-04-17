@@ -3,261 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boost Store | Tüketim Çılgınlığı</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
-        /* #myDiv {
-            border: 1px solid red;
-            height: 100px;
-            padding: 5px;
-        }
-
-        .divcss {
-            border: 1px solid red;
-            height: 100px;
-            padding: 5px;
-        }
-
-        .bordercss {
-            border-radius: 5px;
-        }
-
-        .heading {
-            font-size: xx-large;
-            padding-left: 15px;
-            padding-top: 15px;
-            text-decoration: underline;
-            color: brown;
-            text-shadow: 0px 0px 3px;
-        }
-
-        .nav {
-            display: inline-block;
-            float: right;
-        }
-
-        .logo {
-            display: inline-block;
-            width: 150px;
-            margin: 20px;
-        }
-        .nav ul{
-            list-style: none;
-        }
-        .nav ul li{
-            float: left;
-            margin: 8px;
-            margin-right:12px ;
-
-        }
-        .header{
-            background-color: aliceblue;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            margin: 0;
-        } */
-        /* Profil Örneği*/
-
-
-        .foto img {
-            width: 400px !important;
-            height: 450px !important;
-            border-radius: 10px;
-        }
-
-        .foto {
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(255, 77, 77, 0.411);
-            margin-left: 30px;
-            margin-right: 50px;
-            float: left;
-        }
-
-        .info {
-            background-color: white;
-            width: 800px;
-            height: 450px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(94, 94, 94, 0.411);
-            padding-bottom: 20px;
-            float: right;
-        }
-
-        .headling {
-            margin-bottom: 30px;
-            margin-left: 15px;
-        }
-
-        body {
-            background-color: rgb(231, 231, 231);
-            font-family: 'Akshar', sans-serif;
-        }
-
-        .container {
-            text-align: center;
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-
-        .table {
-            margin: 100px 0px 0px 100px;
-            text-align: left;
-            font-size: xx-large;
-        }
-
-        .table tr td {
-            padding-left: 60px;
-        }
-
-        .social {
-            margin-top: 50px;
-        }
-
-        .fa {
-            padding: 20px;
-            background-color: rgb(230, 231, 233);
-            width: 20px;
-            border-radius: 50%;
-        }
-
-        .fa:hover {
-            background-color: rgb(174, 175, 175);
-        }
-    </style>
 </head>
 
 <body>
-    <div class="headling">
-        <h1>Profil Bilgilerim</h1>
-        <hr>
+    <div class="header">
+
+        <div class="logo">
+            Boost Store
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ürün Ara">
+        </div>
+        <div class="account">
+            <a href="">Login</a>|<a href="">Account</a>
+        </div>
+    </div>
+    <div class="banner">
+        <marquee>Ramazan Ayına Özel %50 İndirim</marquee>
     </div>
     <div class="container">
-        <div class="foto">
-            <img src="sergen.jpg" />
+
+        <div class="menu">
+            <input type="text" placeholder="Kategori Ara">
+            <h2><a href="">Giyim</a></h2>
+            <ul>
+                <li><a href="">Erkek</a></li>
+                <li><a href="">Kadın</a></li>
+                <li><a href="">Ayakkabı</a></li>
+                <li><a href="">İç Giyim</a></li>
+                <li><a href="">Aksesuar</a></li>
+            </ul>
+            <h2><a href="">Ev Eşyaları</a></h2>
+            <ul>
+                <li><a href="">Mobilya</a></li>
+                <li><a href="">Yatak</a></li>
+                <li><a href="">Züccaciye</a></li>
+            </ul>
+            <h2><a href="">Gıda</a></h2>
+            <ul>
+                <li><a href="">İçecekler</a></li>
+                <li><a href="">Et & Süt Ürünleri</a></li>
+                <li><a href="">Aperatifler</a></li>
+            </ul>
+            <h2><a href="">Elektronik</a></h2>
+            <ul>
+                <li><a href="">Bilgisayar</a></li>
+                <li><a href="">Telefon & Tablet</a></li>
+                <li><a href="">Donanım</a></li>
+            </ul>
+            <h2><a href="">Bahçe</a></h2>
+            <h2><a href="">Hobi & Hediyelik</a></h2>
+            <ul>
+                <li><a href="">Kitap</a></li>
+                <li><a href="">Masa Oyunları</a></li>
+            </ul>
         </div>
-        <div class="info">
-            <div>
-                <div>
-                    <table class="table">
-                        <tr>
-                            <th>Adı</th>
-                            <td>Sergen</td>
-                        </tr>
-                        <tr>
-                            <th>Soyadı</th>
-                            <td>Kahraman</td>
-                        </tr>
-                        <tr>
-                            <th>Yaşı</th>
-                            <td>28</td>
-                        </tr>
-                        <tr>
-                            <th>Doğum Yeri</th>
-                            <td>Mersin</td>
-                        </tr>
-                        <tr>
-                            <th>Lisans</th>
-                            <td>Matematik Bölümü</td>
-                        </tr>
-                    </table>
-                    <div class="social">
-                        <a href="" class="fa fa-facebook"></a>
-                        <a href="" class="fa fa-twitter"></a>
-                        <a href="https://www.instagram.com/srgn_/" class="fa fa-instagram" target="blank"></a>
+        <div class="content">
+            <div class="card">
+                <a href=""><img src="img/product1.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>15</span>
+                    </div>
+                    <div class="price">
+                        <span>150.00₺</span>
                     </div>
                 </div>
 
             </div>
-
+            <div class="card">
+                <a href=""><img src="img/product1.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>34</span>
+                    </div>
+                    <div class="price">
+                        <span>150.00₺</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="card">
+                <a href=""><img src="img/product2.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>66</span>
+                    </div>
+                    <div class="price">
+                        <span>132.59₺</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="card">
+                <a href=""><img src="img/product1.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>16</span>
+                    </div>
+                    <div class="price">
+                        <span>100.00₺</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="card">
+                <a href=""><img src="img/product2.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>12</span>
+                    </div>
+                    <div class="price">
+                        <span>129.99₺</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="card">
+                <a href=""><img src="img/product2.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>15</span>
+                    </div>
+                    <div class="price">
+                        <span>129.99₺</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="card">
+                <a href=""><img src="img/product1.jpg" alt="Boost Store ürünler"></a>
+                <div class="card-footer">
+                    <div class="stock">
+                        <span>Stock:</span><span>1</span>
+                    </div>
+                    <div class="price">
+                        <span>229.00₺</span>
+                    </div>
+                </div>
+            
+            </div>
         </div>
-
     </div>
-
-
+    <div class="footer">
+        <span>Copyright © 2022 Boost Store</span>
+        <span>Powered By <a href="mailto:sergen_kahraman_@hotmail.com">Sergen Kahraman</a></span>
+        <div class="social">
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/srgn_/" class="fa fa-instagram" target="blank"></a>
+        </div>
+    </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-    <div class="header">
-        <div class="logo">
-            <img src="logo.jpg" alt="w3schools" />
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="">Ana Sayfa</a></li>
-                <li><a href="">Hakkımızda</a></li>
-                <li><a href="">İletişim</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <table>
-        <tr>
-            <td class="divcss bordercss" style=" width: 500px;">Logo</td>
-            <td style=" width: 500px;">
-                <ul>
-                    <li style="float:left; margin-right: 10px; list-style: none;"><a href="">Ana Sayfa</a> </li>
-                    <li style="float:left; margin-right: 10px; list-style: none;"><a href="">Hakkımızda</a> </li>
-                    <li style="float:left; margin-right: 10px; list-style: none;"><a href="">İletişim</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <hr>
-    <div class="divcss bordercss">
-        <div style="border: 1px solid red; height: 50px; width: 50px;">
-
-        </div>
-    </div>
-    <hr>
-    <hr>
-    <div class="divcss bordercss" >
-        Sergen Kahraman
-    </div>
-    <div class="divcss bordercss" >
-        Başka Birşey
-    </div>
-    <hr>
-    <hr>
-    <div class="heading">
-        Sergen Kahraman
-    </div>
-    <div class="heading">
-        Yeni Başlık
-    </div>
-
-
- -->
 
 </html>
