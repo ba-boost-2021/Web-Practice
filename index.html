@@ -9,6 +9,7 @@
     <style>
         body {
             background-color: rgb(202, 204, 204);
+            margin: 0;
         }
 
         .card {
@@ -44,18 +45,96 @@
             align-content: center;
             justify-content: center;
             flex-grow: 1;
+            flex-direction: column;
         }
-        #records{
+
+        .records {
             display: flex;
             flex-wrap: wrap;
+            padding: 50px;
+            left: 700px;
+            overflow: auto;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+        }
+
+        .property {
+            text-align: right;
+            padding: 5px;
+        }
+        .form {
+            background-color: rgb(192, 191, 191);
+            width: 700px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        .form{
+            padding-top: 50px;
+        }
+        .group{
+            margin: 10px 50px 10px 50px;
+        }
+        .control{
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+            outline: none;
+            padding-left: 10px;
+        }
+        .btn{
+            width: 50%;
+            height: 50px;
+            border: none;
+            border-radius: 3px;
+            background-color: #f27a1a;
+            font-weight: 500;
+            font-size: large;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #f06d01;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-    <button id="add">Ekle</button>
-    <div id="records">
+    <div class="container">
+        <div class="form">
+            <div class="group">
+                <label for="txtFirstName">FirstName</label>
+                <input type="text" id="txtFirstName" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtLastName">LastName</label>
+                <input type="text" id="txtLastName" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtAge">Age</label>
+                <input type="text" id="txtAge" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtDescription">Description</label>
+                <textarea style="resize: none;" id="txtDescription" cols="30" rows="10" class="control"></textarea>
+            </div>
+            <div class="group btn-container">
+                <button class="btn" id="add">Ekle</button>
+            </div>
+            
 
+        </div>
+        <div class="records">
+        </div>
     </div>
 </body>
 <template id="cardTemplate">
@@ -67,21 +146,26 @@
             <div class="table">
                 <table>
                     <tr>
-                        <td><b>FirstName</b> </td>
-                        <td id="firstName">Sergen</td>
+                        <td class="property"><b>FirstName:</b> </td>
+                        <td id="firstName" class="value"></td>
                     </tr>
                     <tr>
-                        <td><b>LastName</b> </td>
-                        <td id="lastName">Kahraman</td>
+                        <td class="property"><b>LastName:</b> </td>
+                        <td id="lastName" class="value"></td>
                     </tr>
                     <tr>
-                        <td> <b>Age</b> </td>
-                        <td id="age">258</td>
+                        <td class="property"> <b>Age:</b> </td>
+                        <td id="age" class="value"></td>
                     </tr>
                 </table>
+            </div>
+            <div>
+                <p id="description">
+                </p>
             </div>
         </div>
     </div>
 </template>
 <script src="js/main.js"></script>
+
 </html>
