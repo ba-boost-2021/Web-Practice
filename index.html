@@ -21,6 +21,7 @@
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.199);
             display: flex;
             flex-wrap: wrap;
+            cursor: pointer;
         }
 
         .imgDiv {
@@ -110,6 +111,20 @@
             color: red;
             display: none;
         }
+        .selected{
+            box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.671) !important;
+        }
+        .removeButton{
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: none;
+        }
+        .removeButton .btn{
+            width: 100px;
+            background-color: brown;
+            
+        }
     </style>
 </head>
 
@@ -141,17 +156,18 @@
                 </select>
                 <span id="genderValidation" class="validation-text"><i>*Boş Bırakılamaz</i></span>
             <div class="group btn-container">
-                <button class="btn" id="add">Ekle</button>
+                <button class="btn" id="add" >Ekle</button>
             </div>
-            
-
+        </div>
+        <div id="remove" class="removeButton">
+            <button class="btn" onclick="remove()">Kaldır</button>
         </div>
         <div class="records">
         </div>
     </div>
 </body>
 <template id="cardTemplate">
-    <div class="card">
+    <div class="card default" onclick="select(this)">
         <div class="imgDiv">
             <img src="img/male.png" id="genderImg">
         </div>
