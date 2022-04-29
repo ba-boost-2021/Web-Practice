@@ -105,6 +105,11 @@
             justify-content: center;
             margin-top: 50px;
         }
+        .validation-text{
+            font-size: small;
+            color: red;
+            display: none;
+        }
     </style>
 </head>
 
@@ -127,6 +132,14 @@
                 <label for="txtDescription">Description</label>
                 <textarea style="resize: none;" id="txtDescription" cols="30" rows="10" class="control"></textarea>
             </div>
+            <div class="group">
+                <label for="cmbGender">Gender</label>
+                <select id="cmbGender" class="control">
+                    <option value="-1">Seçiniz</option>
+                    <option value="0">Erkek</option>
+                    <option value="1">Kadın</option>
+                </select>
+                <span id="genderValidation" class="validation-text"><i>*Boş Bırakılamaz</i></span>
             <div class="group btn-container">
                 <button class="btn" id="add">Ekle</button>
             </div>
@@ -140,7 +153,7 @@
 <template id="cardTemplate">
     <div class="card">
         <div class="imgDiv">
-            <img src="img/male.png" alt="">
+            <img src="img/male.png" id="genderImg">
         </div>
         <div class="content">
             <div class="table">
